@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { ProSidebar, Menu, MenuItem } from 'react-pro-sidebar'
-// import 'react-pro-sidebar/dist/css/styles.css'
+import 'react-pro-sidebar/dist/css/styles.css'
 import { Box, IconButton, Typography, useTheme } from '@mui/material'
 import { Link } from 'react-router-dom'
 import { tokens } from '../../theme'
@@ -81,7 +81,7 @@ const Sidebar = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.gray[100]}>
-                  ADMINIS
+                  ADMINESTRINO
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -141,14 +141,14 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             <Item
-              title="Contacts Information"
+              title="Contact"
               to="/contacts"
               icon={<ContactsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Invoices Balances"
+              title="Invoices & Balances"
               to="/invoices"
               icon={<ReceiptOutlinedIcon />}
               selected={selected}
